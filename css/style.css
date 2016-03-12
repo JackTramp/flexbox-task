@@ -1,0 +1,44 @@
+html {
+	font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+	height: 400px;
+}
+
+header .info-bar{
+	height: 30px;
+	background-color: rgba(242,242,242,160);
+	padding-top: 5px;
+}
+
+.info-bar .flex-container {
+	display: flex;
+	flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;	
+}
+
+.info-bar .flex-container a{
+	text-decoration: none;
+	color: rgba(97,193,213,127);	
+}
+
+.info-bar .flex-container .phone-number {
+	padding-left: 20px;
+	color: rgba(128,128,128,160);
+}
+
+.flex-container {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}

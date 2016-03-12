@@ -7,44 +7,56 @@
 		<link rel="stylesheet" type="text/css" href="css/normilize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
-	<body>	
-		<div class="flex-container">	
-			<header>
-				<a class="site-name" href="https://hello@euged.com">hello@euged.com</a> <!-- ??? -->
-				<span>01234 567890</span>					
-				<div class="contact-info">					
-					<a class="icon icon-activities" href="activities.html"></a> <!-- May be use a list? -->
-					<a class="icon icon-tw" href="http://twitter.com"></a>
-	            	<a class="icon icon-fb" href="http://www.facebook.com"></a>
-	            	<a class="icon icon-rss" href="rss.xml"></a>
-				</div>
-				<!-- <img alt="logo" src=""> -->
-				<span>M</span>
-				<span>Metrolium</span>
-				<nav class="main-navigation">
-					<ul>
-						<li><a href="home.html" hreflang="en" rel="index" type="text/html">Home</a></li>
-						<li><a href="pages.html" hreflang="en" rel="index" type="text/html">Pages</a></li>
-						<li><a href="portfolio.html" hreflang="en" rel="index" type="text/html">Portfolio</a></li>
-						<li><a href="blog.html" hreflang="en" rel="index" type="text/html">Blog</a></li>
-						<li><a href="shortcodes.html" hreflang="en" rel="index" type="text/html">Shortcodes</a></li>
-						<li><a href="features.html" hreflang="en" rel="index" type="text/html">Features</a></li>
-						<li><a href="purchase.html" hreflang="en" rel="index" type="text/html">Purchase now</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div class="path-bar">
-					<span>Home</span>
-					<img alt="arrow" src="">
-					<span>Portfolio</span>
+	<body>				
+		<header>			
+			<div class="info-bar">
+				<div class="flex-container">
+					<a href="#">hello@euged.com</a> <!-- ??? -->
+					<span class="phone-number">01234 567890</span>
+					<ul>			
+						<li class="icon icon-activities"><a href="#"></a></li> 
+						<li class="icon icon-tw"><a href="#"></a></li>
+	           			<li class="icon icon-fb"><a href="#"></a></li>
+	           			<li class="icon icon-rss"><a href="#"></a></li>
+	           		</ul>
+	           	</div>
 			</div>
-			<div class="portfolio-logo">
-				<span>Portfolio</span><br>
-				<span>Wibble</span>
-			</div>	
-			<main>
-				<section class="main-content">
-					<nav class="home-navigation">
+			<!-- <img alt="logo" src=""> -->
+			<span>M</span>
+			<span>Metrolium</span>
+			<nav id="main-navigation" class="primary">
+				<div class="flex-container">	
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Blog</a></li>
+		 			    <li><a href="#">Shortcodes</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Purchase now</a></li>
+					</ul>
+				</div>
+			</nav>			
+		</header>
+		<div class="path-bar">
+			<div class="flex-container">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><img alt="arrow" src=""></li>
+					<li><a href="#">Portfolio</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portfolio-logo">
+			<div class="flex-container">
+				<h1>Portfolio</h1>
+				<p>Wibble</p>
+			</div>
+		</div>	
+		<main>
+			<section class="content">
+				<div class="flex-container">
+					<nav class="main-menu">
 						<ul>
 							<li><a href="#" hreflang="en">All</a></li>
 							<li><a href="#" hreflang="en">Design</a></li>
@@ -54,58 +66,73 @@
 							<li><a href="#" hreflang="en">Wordpress</a></li>						
 						</ul>
 					</nav>
-					<div class="content-container">							
-		  				<div class="flex-block-1">
-		  					<span>Eighth Portfolio Piece</span></br><!--all images http://placehold.it/300x150 -->
-		  					<span>April 16,2013</span>
-		  				</div>
-		  				<div class="flex-block-2">
-							<span>Seventh Portfolio Piece</span></br>
-		  					<span>April 16,2013</span>
-		  				</div>
-		  				<div class="flex-block-3">
-		  					<span>Sixth Portfolio Piece</span></br>
-		  					<span>April 16,2013</span>
-		  				</div>
-		  				<div class="flex-block-4">
-		  					<span>Fifth Portfolio Piece</span></br>
-		 					<span>April 16,2013</span>
-		  				</div>
-		  				<div class="flex-block-5">
-		  					<span>Fourth Portfolio Piece</span></br>
-		  					<span>April 16,2013</span>
-		  				</div>
-		  				<div class="flex-block-6">
-		  					<span>Third Portfolio Piece</span></br>
-		  					<span>April 16,2013</span>
-		  				</div>
-		  				<div class="flex-block-7">
-		  					<span>Second Portfolio Piece</span></br>
-		  					<span>April 16,2013</span>
-		  				</div>
-		  				<div class="flex-block-8">
-		  					<span>First Portfolio Piece</span></br>
-		  					<span>April 16,2013</span>
-		  				</div>
-					</div>							
-				</section>
-				<section>
-					<div class="buy-button">
-						<span>A site wide Call to Action band! Have you fallen in love yet?</span>
-						<form>
-							<input> <!-- !!!! -->
-						</form>
-					</div>
-					<div class="contact-info">
-						<span>Find us elsewhere</span>
-						<a class="icon icon-activities" href="activities.html"></a> <!-- May be use a list? -->
-						<a class="icon icon-tw" href="http://twitter.com"></a>
-	            		<a class="icon icon-fb" href="http://www.facebook.com"></a>
-	            		<a class="icon icon-rss" href="rss.xml"></a>
-	            	</div>
-			</main>
-			<footer>
-				<div class="footer-container">
+					<ul class="main-image">							
+		  				<li>
+		  					<div class="image-1"></div>
+		  					<p>Eighth Portfolio Piece</span></p><!--all images http://placehold.it/300x150 -->
+		  					<p>April 16,2013</p>	  					
+		  				</li>
+		  				<li>
+		  					<div class="image-2"></div>
+							<p>Seventh Portfolio Piece</p>
+		  					<p>April 16,2013</p> 					
+		  				</li>
+		  				<li>
+		  					<div class="image-3"></div>
+		  					<p>Sixth Portfolio Piece</p>
+		  					<p>April 16,2013</p>
+		  				</li>
+		  				<li>
+		  					<div class="image-4"></div>
+		  					<p>Fifth Portfolio Piece</p>
+		 					<p>April 16,2013</p>
+		  				</li>
+		  				<li>
+		  					<div class="image-5"></div>
+		  					<p>Fourth Portfolio Piece</p>
+		  					<p>April 16,2013</p>
+		  				</li>
+		  				<li>
+		  					<div class="image-6"></div>
+		  					<p>Third Portfolio Piece</p>
+		  					<p>April 16,2013</p>
+		  				</li>
+		  				<li>
+		  					<div class="image-7"></div>
+		  					<p>Second Portfolio Piece</p>
+		  					<p>April 16,2013</p>
+		  				</li>
+		  				<li>
+		  					<div class="image-8"></div>
+		  					<p>First Portfolio Piece</p>
+		  					<p>April 16,2013</p>
+		  				</li>
+					</ul>	
+				</div>						
+			</section>
+		</main>	
+		<footer>
+			<div class="footer-buy">
+				<div class="flex-container">
+					<span>A site wide Call to Action band! Have you fallen in love yet?</span>
+					<form>
+						<input> <!-- !!!! -->
+					</form>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="flex-container">
+					<span>Find us elsewhere</span>
+					<ul>
+						<li class="icon icon-activities"><a href="#"></a></li> 
+						<li class="icon icon-tw"><a href="#"></a></li>
+	           			<li class="icon icon-fb"><a href="#"></a></li>
+	           			<li class="icon icon-rss"><a href="#"></a></li>
+	           		</ul>
+	           	</div>
+	        </div>
+			<div class="footer-posts">
+				<div class="flex-container">
 					<div class="about-info">
 						<h1>About Metrolium</h1>
 						<p>Sed at tellus nibh,non aliquam velit.Fusce lobortis enim at nibh elementum sagittis quis at massa. Suspendisse scelerisque dictum sapien, et dictum erat ullamcorper vel. Donec sagittis volutpat arcu, quis auctor lectus ornare vitae. Integer sed quam at turpis.</p>
@@ -123,15 +150,17 @@
 						<!-- Posts -->
 					</div>
 				</div>
-				<div class="lower-footer">
+			</div>
+			<div class="footer-lower">
+				<div class="flex-container">
 					<ul>
 						<li><a href="#" hreflang="en">Blog</a></li>
 						<li><a href="#" hreflang="en">Purchase now</a></li>
-						<li><a href="#" hreflang="en">Shortcodes</a></li>										
+						<li><a href="#" hreflang="en">Shortcodes</a></li>	
 					</ul>
-					<span>2013 Metrolium - <a href="">Metrolium WordPress Theme</a> by <a href="https://hello@euged.com">Euged</a></span>
+					<span>2013 Metrolium - <a href="#">Metrolium WordPress Theme</a> by <a href="https://hello@euged.com">Euged</a></span>
 				</div>
-			</footer>
-		</div>	
+			</div>
+		</footer>			
 	</body>	
 </html>
