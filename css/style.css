@@ -12,6 +12,25 @@ html {
 	width: 100%;
 }
 
+.navigation ul li {
+	display: inline-block;
+}
+
+.navigation a {
+	padding: 10px 15px;
+	color:rgba(128,128,128,160);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.navigation ul a:hover{	
+	background-color: rgba(41,189,202,123);
+	color: white;
+	transition: color 0.4s linear;
+	transition: background-color 0.5s linear;	
+}
+
 header {
 	width: 100%;
 }
@@ -45,8 +64,7 @@ header .info-bar{
 	text-align: center;
 	padding-top: 7px;
 	width: 30px;
-	height: 30px;
-	background-position: 0;
+	height: 30px;	
 	background-color: rgba(229,229,229,160);
 	color:rgba(128,128,128,160);		
 	font-size: 15px;
@@ -80,27 +98,8 @@ header .info-bar{
 	margin-left: 120px;
 }
 
-.logo-bar .main-navigation ul li{
-	display: inline-block;	
-}
-
-.logo-bar .main-navigation a{
-	padding: 10px 15px;
-	color:rgba(128,128,128,160);
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 12px;
-}
-
 .logo-bar .main-navigation ul li:last-child{
 	margin-right: 135px;
-}
-
-.logo-bar .main-navigation ul a:hover{	
-	background-color: rgba(41,189,202,123);
-	color: white;
-	transition: color 0.4s linear;
-	transition: background-color 0.5s linear;	
 }
 
 .path-bar .flex-container {
@@ -132,6 +131,188 @@ header .info-bar{
 .path-bar li:last-child a {
 	color: rgba(41,189,202,123);
 }
+
+.portfolio-bar .flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	height: 150px;
+	background-color: rgba(41,189,202,123);
+}
+
+.portfolio-bar .flex-container p{
+	color: white;
+	font-size:30px;
+	margin-left: 120px;
+}
+.portfolio-bar .flex-container p:last-child{
+	font-size: 15px;
+}
+
+.content > .flex-container {
+	display: flex;	
+	flex-direction: column;
+	justify-content: flex-start;
+	width:960px;
+	margin-left: 120px;
+}
+
+.content .inner-navigation {
+	position: relative;
+	background-color: rgba(242,242,242,160);	
+	padding: 10px 15px 10px 0;	
+	margin: 50px 0;
+}
+
+.content .main-image .flex-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;	
+}
+
+.content .main-image {
+	margin-bottom: 30px;
+}
+
+.content .main-image li {
+	margin-right: 30px;
+	margin-bottom: 40px;
+}
+
+.content .main-image li:nth-child(3n+3){
+	margin-right: 0;
+}
+
+.content .main-image li p{
+	font-size: 15px;
+	padding-top:5px; 
+	color:rgba(82,202,212,123);
+}
+
+.content .main-image li p:last-child{
+	font-size: 10px;
+	padding: 5px 0;
+	color:rgba(128,128,128,160);
+}
+
+.footer-buy .flex-container {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 100px;
+	background-color: rgba(203,241,244,123);
+}
+
+.footer-buy span {
+	font-size: 17px;
+	color: rgba(32,149,160,123);
+	margin-right: 15px;
+}
+
+.footer-buy .button {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font: 15px; 
+	background-color: rgba(41,189,202,123);
+	width: 170px;
+	height: 40px;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.footer-buy .button:hover {
+	background-color: rgba(28,129,138,123);
+	transition: background-color 0.5s linear;
+}
+
+.footer-info .flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	background-color: rgba(41,189,202,123);
+}
+
+.footer-info span {
+	font-size: 25px;
+	color: white;
+	margin-left: 120px;
+}
+
+.footer-info ul li {
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(32,149,160,123);			
+	font-size: 20px;	
+}
+
+.footer-info ul li a{
+	text-decoration: none;
+	color:white;
+}
+
+.footer-info ul li:last-child{
+	margin-right: 120px;
+}
+
+.footer-info ul li:hover {
+	background-color: blue;		
+	transition: background-color 1s linear;	
+}
+
+.footer-posts .info {
+	margin-top: 50px;
+}
+
+.footer-posts .flex-container {
+	display: flex;
+	justify-content:flex-start;
+	height: 405px;
+	background-color: rgba(68,68,68,160);
+}
+
+.footer-posts .about-info {
+	margin-left: 120px;
+} 
+
+.footer-posts .about-info span{
+	font-size: 30px;
+	color:white;
+}
+
+.footer-posts .about-info p{ /*FIX!!!*/
+	font-size: 15px;
+	color: rgba(153,153,153,160);
+}
+
+.footer-posts .search  input{
+	width: 245px;
+	height: 40px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.footer-posts .search button{
+	width: 55px;
+	height: 40px;
+	border-radius: 5px;	
+	background-color: rgba(191,191,191,160);
+	color:white;
+	margin-right: 30px;
+}
+
+.footer-posts .search button:hover{
+	cursor: pointer;
+	background-color:rgba(41,189,202,123);
+	transition: background-color 0.3s ease-in; 
+}
+
+
 
 ul {
 	list-style: none;
