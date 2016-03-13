@@ -8,35 +8,129 @@ html {
     padding: 0;
 }
 
+.flex-container {
+	width: 100%;
+}
+
 header {
-	height: 400px;
+	width: 100%;
 }
 
 header .info-bar{
-	height: 30px;
-	background-color: rgba(242,242,242,160);
-	padding-top: 5px;
+	max-height: 30px;
+	background-color: rgba(242,242,242,160);	
 }
 
 .info-bar .flex-container {
 	display: flex;
 	flex-direction: row;
     justify-content: flex-end;
-    align-items: center;	
+    align-items: center; 	
 }
 
-.info-bar .flex-container a{
+.info-bar .flex-container > a{
 	text-decoration: none;
+	font-size: 15px;
 	color: rgba(97,193,213,127);	
 }
 
 .info-bar .flex-container .phone-number {
 	padding-left: 20px;
+	font-size: 15px;
 	color: rgba(128,128,128,160);
 }
 
-.flex-container {
-	width: 100%;
+.info-bar .flex-container ul li{
+	display: inline-block;
+	text-align: center;
+	padding-top: 7px;
+	width: 30px;
+	height: 30px;
+	background-position: 0;
+	background-color: rgba(229,229,229,160);
+	color:rgba(128,128,128,160);		
+	font-size: 15px;
+}
+
+.info-bar .flex-container ul li:hover{
+	background-color: blue;	
+	color:white;
+	transition: color 1s linear;
+	transition: background-color 1s linear;	
+}
+
+.info-bar .flex-container ul li:last-child{
+	margin-right: 120px;
+}
+
+.info-bar .flex-container ul li:first-child{
+	margin-left: 20px;
+}
+
+.logo-bar .flex-container {
+	height: 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-bar img {
+	width: 220px;
+	height: 50px;
+	margin-left: 120px;
+}
+
+.logo-bar .main-navigation ul li{
+	display: inline-block;	
+}
+
+.logo-bar .main-navigation a{
+	padding: 10px 15px;
+	color:rgba(128,128,128,160);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.logo-bar .main-navigation ul li:last-child{
+	margin-right: 135px;
+}
+
+.logo-bar .main-navigation ul a:hover{	
+	background-color: rgba(41,189,202,123);
+	color: white;
+	transition: color 0.4s linear;
+	transition: background-color 0.5s linear;	
+}
+
+.path-bar .flex-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 40px;
+	background-color: rgba(32,149,160,123);	
+}
+
+.path-bar ul {
+	margin-left:120px; 
+}
+
+.path-bar ul li {	
+	display: inline;
+	padding-right: 10px;	
+}
+
+.path-bar a {	
+	text-decoration: none;
+	font-size: 12px;
+} 
+
+.path-bar li:first-child a {
+	color: white;
+}
+
+.path-bar li:last-child a {
+	color: rgba(41,189,202,123);
 }
 
 ul {
